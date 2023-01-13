@@ -23,7 +23,7 @@ public class ContaPoupanca extends Conta {
         if (getSaldo() > valor) {
             setSaldo(getSaldo() - valor);
         } else {
-            System.out.println("Não foi possível realizar a transferência.");
+            System.out.println("Não foi possível realizar o saque.");
         }
     }
 

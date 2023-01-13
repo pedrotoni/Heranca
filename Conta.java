@@ -25,11 +25,11 @@ public abstract class Conta {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Conta conta = (Conta) o;
-        //Guilherme, Luciana, Pedro - continuar equals
-        return numero.equals(conta.numero) && saldo.equals(conta.saldo);
+        if (this == conta) return true;
+        return numero.equals(conta.getNumero()) && saldo.equals(conta.getSaldo());
+        //return numero.equals(conta.numero) && saldo.equals(conta.saldo);
     }
 
     @Override

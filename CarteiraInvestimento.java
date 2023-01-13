@@ -15,9 +15,11 @@ public class CarteiraInvestimento extends Conta {
         if (getSaldo() > valor) {
             setSaldo(getSaldo() - valor);
         } else {
-            System.out.println("Não foi possível realizar a transferência.");
+            System.out.println("Não foi possível realizar o saque.");
         }
     }
+
+    //TODO mover para Conta
     @Override
     public void depositar(Double valor) {
         if (valor > 0.0) {
